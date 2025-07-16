@@ -1,18 +1,77 @@
+import ProductCard from "./ProductCard";
+
 const Hero = () => {
+
+  const products = [
+    {
+      id: 1,
+      name: "Labial Líquido Nocturne",
+      description: "asdasdasdasdasd",
+      price: "$25.99",
+      rating: 4.8,
+      // imageSrc: panImage,
+    },
+    {
+      id: 2,
+      name: "asdasdasdasdasd",
+      description: "asdasdasdasdasd",
+      price: "$45.00",
+      rating: 4.9,
+      // imageSrc: panImage,
+    },
+    {
+      id: 3,
+      name: "asdasdasdasdasd",
+      description: "asdasdasdasdasd",
+      price: "$30.50",
+      rating: 4.7,
+      // imageSrc: panImage,
+    },
+    {
+      id: 4,
+      name: "asdasdasdasdasd",
+      description: "asdasdasdasdasd",
+      price: "$20.00",
+      rating: 4.6,
+      // imageSrc: panImage,
+    },
+  ];
+
   return (
     <section className="relative py-20 lg:py-64 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-pink-900/25 via-black to-purple-900/30 "/>
+      <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-900/25 via-black to-purple-900/30 "/>
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <div className="space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            {products.map((product) => (
+              <div
+                key={product.id}
+                className="group rounded-xl overflow-hidden border border-gray-800 hover:border-pink-500/50 transition-all duration-300 bg-gray-900/50 backdrop-blur-sm"
+              >
+                <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-pink-800/10 to-purple-900/10">
+                  {/* <ProductImage src={product.imageSrc} alt={product.name} /> */}
 
-            </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black-10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="p-6 space-y-4">
+                  <div className="space-y-2">
+                    <h3 className="text-lg font-semibold group-hover:text-pink-300 transition-colors">
+                      {product.name}
+                    </h3>
+                    <p className="text-gray-400 text-sm leading-relaxed line-clamp-2">
+                      {product.description}
+                    </p>
+                  </div>
 
+                  <div className="flex items-center justify-between">
+                    <span className="text-2xl font-bold bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent">
+                      {product.price}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
       </div>
-
     </section>
   );
 }

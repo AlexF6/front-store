@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Button } from "./ui/button";
 
 const Header = () => {
   return (
@@ -12,11 +13,9 @@ const Header = () => {
           </div>
           
           <div>
-            <button className="flex items-center justify-center px-6 py-2 rounded-md
-                                    bg-gradient-to-r from-purple-600 to-fuchsia-500 hover:from-purple-700 hover:to-fuchsia-600
-                                    text-white text-lg font-medium transition-colors duration-300">
+            <Button className="bg-gradient-to-r from-purple-600 to-fuchsia-500 hover:from-purple-900 hover:to-fuchsia-700 border-0">
               Login
-            </button>
+            </Button>
           </div>
         </div>
       </div>
