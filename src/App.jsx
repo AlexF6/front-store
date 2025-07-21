@@ -2,6 +2,7 @@ import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import TryComp from './components/TryComp'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div>
         <Footer/>
       </div>
+      {/* <TryComp/> */}
     </div>
   )
 }
