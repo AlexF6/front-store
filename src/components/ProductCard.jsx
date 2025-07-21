@@ -7,7 +7,7 @@ const ProductCard = () => {
     {
       id: 1,
       name: "Camiseta Algodón",
-      description: "asdasdasdasdasd",
+      description: "Estampado revolucionary",
       price: "30.000",
       rating: 4.8,
       imageSrc: shirt1
@@ -15,7 +15,7 @@ const ProductCard = () => {
     {
       id: 2,
       name: "Camiseta Algodón",
-      description: "asdasdasdasdasd",
+      description: "Estampado revolucionary",
       price: "30.000",
       rating: 4.9,
       imageSrc: shirt1
@@ -23,7 +23,7 @@ const ProductCard = () => {
     {
       id: 3,
       name: "Camiseta Algodón",
-      description: "asdasdasdasdasd",
+      description: "Estampado revolucionary",
       price: "30.000",
       rating: 4.7,
       imageSrc: shirt1
@@ -31,7 +31,7 @@ const ProductCard = () => {
     {
       id: 4,
       name: "Camiseta Algodón",
-      description: "asdasdasdasdasd",
+      description: "Estampado revolucionary",
       price: "30.000",
       rating: 4.6,
       imageSrc: shirt1

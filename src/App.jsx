@@ -1,19 +1,18 @@
 import './App.css'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
 
 function App() {
   return (
     <div className="flex flex-col min-h-screen bg-black text-white">
-      <header>
-        <Header/>
-      </header>
-      <main className="flex-grow">
+      <Header/>
+      <main className="flex-grow relative">
         <Hero/>
       </main>
-      <footer>
-        © 2025 YourSite. All rights reserved.
-      </footer>
+      <div>
+        <Footer/>
+      </div>
     </div>
   )
 }
