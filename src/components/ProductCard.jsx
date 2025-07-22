@@ -1,11 +1,11 @@
 import ProductImage from "./ProductImage";
 import shirt1 from "../assets/shirt.webp"
 import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
 
   const fetchProducts = async() => {
-    const res = await fetch("http://127.0.0.1:3000/products")
-    if (!res.ok) new Error("failed to fetch")
-    return res.json();
+    const response = await axios.get("http://127.0.0.1:3000/products")
+    return response.data;
   }
 
   const formatCOP = (value) => {
