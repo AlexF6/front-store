@@ -1,22 +1,18 @@
-import './App.css'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import TryComp from './components/TryComp'
+import { Routes, Route } from 'react-router-dom';
+import './App.css';
+import Layout from './pages/Layout';
+import Login from './pages/Login';
+import SignUp from './pages/SignUp';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen bg-black text-white">
-      <Header/>
-      <main className="flex-grow relative">
-        <Hero/>
-      </main>
-      <div>
-        <Footer/>
-      </div>
-      {/* <TryComp/> */}
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={ <ProtectedRoute> <Layout /> </ProtectedRoute> } />
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/register" element={<SignUp/>}/>
+    </Routes>
+  );
 }
 
-export default App
+export default App;
