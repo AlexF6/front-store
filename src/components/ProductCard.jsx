@@ -1,5 +1,8 @@
 import ProductImage from "./ProductImage";
 import shirt1 from "../assets/shirt.webp"
+import shirt2 from "../assets/shirt.webp"
+import shirt3 from "../assets/shirt.webp"
+import shirt4 from "../assets/shirt.webp"
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 

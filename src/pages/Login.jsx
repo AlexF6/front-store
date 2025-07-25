@@ -41,7 +41,7 @@ const Login = () => {
         {/* Back */}
       <div className="p-6">
         <Link to="/">
-          <Button variant="ghost" className="text-white hover:bg-white/10 p-2">
+          <Button variant="ghost" className="text-white hover:bg-gray-500 p-2">
             <ArrowLeft className="h-4 w-4 mr-2" />
               Back
           </Button>
